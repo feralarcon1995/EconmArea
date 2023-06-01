@@ -1,0 +1,103 @@
+/* mediaqueries */
+
+@media only screen and (max-width: 990px) {
+    .hero__left h1 {
+        font-size: 34px;
+    }
+
+    .hero__left p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c1,
+    .c2 {
+        position: static;
+        margin: 10px 0;
+    }
+
+    .hero__right__title:hover {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .hero__right {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            &__title {
+                width: 49%;
+                padding: 25px;
+                font-size: 16px;
+                text-align: center;
+
+                &:hover {
+                    padding: 25px;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    footer p {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-list {
+        width: 100%;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .hero__left {
+        width: 100%;
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            text-align: justify;
+        }
+        a {
+            align-self: center;
+        }
+
+        &__users {
+            justify-content: center;
+        }
+    }
+
+    .hero__right {
+        flex-direction: column;
+    }
+
+    .c1,
+    .c2 {
+        margin: 0;
+        width: 100%;
+    }
+}
